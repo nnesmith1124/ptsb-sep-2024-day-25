@@ -27,17 +27,17 @@ function displayPosts(posts) {
         postDiv.classList.add("post");
 
         // destructuure the user object
-        const { name, email, address } = user;
+       // const { name, email, address } = user;
 
-        // add user details
-        userDiv.innerHTML = `
-            <h3>${name}</h3>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Address:</strong> ${address.street}, ${address.city}</p>
+        // add post details
+        postDiv.innerHTML = `
+            <h3>${id}</h3>
+            <p><strong>Title:</strong> ${title}</p>
+            <p><strong>body:</strong> ${body}</p>
         `
 
         // append the user div to the userList
-        userList.appendChild(userDiv)
+        postList.appendChild(postDiv)
     })
 }
 
