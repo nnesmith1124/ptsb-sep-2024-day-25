@@ -31,9 +31,9 @@ function displayPosts(posts) {
 
         // add post details
         postDiv.innerHTML = `
-            <h3>${id}</h3>
-            <p><strong>Title:</strong> ${title}</p>
-            <p><strong>body:</strong> ${body}</p>
+            <h3>${post.id}</h3>
+            <p><strong>Title:</strong> ${post.title}</p>
+            <p><strong>body:</strong> ${post.body}</p>
         `
 
         // append the user div to the userList
